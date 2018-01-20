@@ -1,0 +1,621 @@
+/* PRIMARY Styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*  ==MY solution
+header, main, section, footer,
+h1, h2,h3, div, p, span, ul {
+  margin-bottom: 1rem;
+}
+*/
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+margin-bottom: 1.5rem;
+}
+
+  body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.location,
+.program,
+.gift,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* HEADER Styles*/
+
+.cover{
+  background:url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  width:100vw;
+  height: 100vh;
+  display:table;
+  text-align: center;
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  /*background-color:  hsla(100,0%,0%,.6);
+  text-align: center;
+  v-align: center;*/
+   vertical-align: middle;
+}
+
+/*  Missing  */
+
+.hero-text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+.hero-text h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+}
+
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+ .tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+/*  Missing  */
+
+/*MY solution GIFT
+@media (min-width:1025px) {
+  
+  .tagline {
+   text-transform: uppercase;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  .hero-text {
+    width:33vw;
+  }
+ .cover{
+  background:url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
+  width:100vw;
+  height: 100vh;
+  display:table;
+  text-align: center;
+}
+  
+}
+*/
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+
+}
+
+...
+
+@media (min-width: 768px) {
+
+  .hero-text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 7rem;
+  }
+
+}
+
+...
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+/* LOcation Styles*/
+
+.burb img {
+  height: 7.5rem;
+}
+
+.burb h3 {
+  font-weight: 700;
+}
+
+.burb div {
+  font-family: 'Muli', sans-serif;
+}
+
+
+.burb::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+@media (min-width: 768px) {
+
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .blurb::after {
+    display: none;
+  }
+
+}
+
+/*MY solution
+@media (min-width:1025px) {
+  .burb {
+    display:inline-block;
+  }
+  .burb::after {
+  content: "";
+  display: none;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+}
+*/
+
+/* PROGRAM Style*/
+
+.program {
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
+  text-align: center;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}
+
+/*MY solution
+@media (min-width:1025px) {
+  .program {
+  width: 100vw;
+  text-align: center;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+}
+*/
+
+/*GIFT style*/
+
+.gift img {
+  height: 7.5rem;
+}
+
+.gift p:last-child {   /* To even out the bottom and top margins of this section. */
+  margin-bottom: 0;
+}
+
+/* FAQ Style*/
+
+.faq {
+  background: hsla(100,0%,0%,.6);;
+  color: #d2ba87;
+  width: 100vw;
+  text-align: center;
+}
+
+.faq h2 {
+  margin-top: 1rem; /* To even out top and bottom margins. */
+}
+
+.faq p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
+}
+
+/*MY solution
+@media (min-width:1025px) {
+  .question-group {
+   display: inline-block;
+   vertical-align: top;
+   width:25.33%;
+  }
+  .question-group::after {
+  content: "";
+  display: none;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+}
+*/
+
+/* FOOTER Style*/
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
+/*MY solution
+@media (min-width:1025px) {
+  footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+}
+*/
+
+/*MY solution GIFT
+
+.footer-wrapper {
+  vertical-align: middle;
+  text-align: center;
+  width: 100vw;
+  height: 5vh;
+  background-color: #606060;
+}
+
+.footer-wrapper p small {
+  font-size: 0.625rem;
+  color: #fff;
+}
+*/
+
+/*MY solution GIFT
+
+.faq {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.question, .answear {
+  text-align: left;
+}
+
+.question, .question-group {
+  font-weight: bold;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color:#d2ba87;
+}
+
+*/
+
+/*MY solution GIFT
+
+.gift {
+  text-align:center;
+  paddin-bottom:0;
+}
+
+.gift img {
+  height: 7.5rem;
+*/
+
+
+
+
+
+/* MY solution PROGRAM style
+
+.program {
+  width: 100vw;
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  padding: 1rem;
+}
+
+ul {
+  text-align:left;
+}
+
+program p, li {
+  padding-bottom: .5rem;
+  letter-spacing:0.0625rem;
+  font-family: 'Muli', sans-serif;
+}
+
+*/
+
+
+
+/* MY Solution LOCATION Styles
+
+.location{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.burb {
+  padding: 1rem;
+}
+
+.burb::after {
+  content: "";
+  background-color: #000;
+  display:block;
+  height: 2px;
+  width: 6rem;
+  margin: .5rem auto
+}
+
+section {
+padding: 3rem;  
+}
+
+.burb div {
+  padding-bottom: 1rem;
+  font-family: 'Muli', sans-serif;
+
+}
+
+.burb img {
+  height:9rem;
+}
+*/
+
+/* MY solution Head styles
+.date::before {
+  content:"-";
+}
+
+.date::after {
+  content:"-";
+}
+
+.tagline::after {
+  display: block;
+  content:"---------------";
+}
+ My solution  */ 
+
+  /*   ==MY solution MAIn styles
+main {
+  position:absolute;
+}
+
+section {
+  margin: 0.6rem;
+  padding: 0.6rem;
+  width: 95vw;
+  position: relative;
+  top: 0;
+  left: 50%
+}
+
+body {
+  background: url(' https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png');
+  color: #444349 ;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3, .tagline {
+  font-size: 1.5rem;
+  letter-spacing:0.0625rem;
+}
+
+span {
+   font-size: 1rem;
+  letter-spacing:0.0625rem;
+}
+p, h3 {
+  font-family:'Libre Baskerville', serif;
+}
+
+span, .tagline {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+}
+
+.tagline{
+    text-transform: uppercase;
+}
+
+.program, .faq{
+   background-color:hsla(100,0%,0%,.6);
+  color:  #d2ba87;
+  }
+   
+  a {
+    text-decoration: none;
+    color: #bd806e;
+  }
+ 
+  a:hover {
+    color:#eda087;
+  }
+  
+  footer{
+    background-color: #606060;
+}
+ My solution */
